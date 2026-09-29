@@ -1,7 +1,11 @@
 
 # Wendyl Ziv S. Arellano — Personal CV
 
+<<<<<<< HEAD
 This personal CV webpage was built with HTML and CSS.
+=======
+A student portfolio made using HTML and CSS.
+>>>>>>> task4-branch-b
 
 ## Student Information
 
