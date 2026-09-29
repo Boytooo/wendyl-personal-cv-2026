@@ -1,3 +1,4 @@
+
 # Wendyl Ziv S. Arellano — Personal CV
 
 A simple personal CV webpage built with HTML and CSS.
