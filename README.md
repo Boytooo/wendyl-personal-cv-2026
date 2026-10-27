@@ -1,28 +1,66 @@
-
 # Wendyl Ziv S. Arellano — Personal CV
 
-<<<<<<< HEAD
-This personal CV webpage was built with HTML and CSS.
-=======
-A student portfolio made using HTML and CSS.
->>>>>>> task4-branch-b
+A responsive personal curriculum vitae and portfolio for Wendyl Ziv S. Arellano, a fourth-year BS Information Technology student at Davao del Norte State College, BSIT 4B, IT415.
 
-## Student Information
+## Links
 
-- **Complete name:** Wendyl Ziv S. Arellano
-- **Year level:** 4th year
-- **Set/Section:** BSIT 4B
-- **Subject:** IT415
+- GitHub repository: https://github.com/Boytooo/wendyl-personal-cv-2026
+- Live Vercel website: Add the actual production URL here after deployment.
 
-## Project files
+## Technologies
 
-- `index.html` — the CV page content
-- `style.css` — page layout, colors, and responsive styling
+HTML5, CSS3, and vanilla JavaScript. No framework, package installation, build step, database, or paid services are required. Google Fonts supplies DM Sans, DM Mono, and Instrument Serif; local fallback fonts keep the page usable offline.
 
-## View the page
+## Features
 
-Open `index.html` in a web browser. No extra software or packages are required.
+- Profile, career objective, basic information, education, and skills.
+- Two project previews: this CV website and the Student Information API specification.
+- Academic experience and learning milestones, without invented employment or certifications.
+- Working GitHub links, email links, email copying, and downloadable API specification.
+- Mobile navigation with Escape-to-close, project filters, and expandable API details.
+- Scroll reveals, hover states, smooth anchor navigation, and reduced-motion support.
+- Semantic landmarks, keyboard focus indicators, skip link, live status messages, and print styling.
 
-## Personalize before publishing
+## Files
 
-Replace every bracketed placeholder in `index.html` and this README with your own accurate information. Remove any sections that do not apply. Do not publish private contact details unless you want them public.
+- `index.html`: content, navigation, project cards, and contact information.
+- `style.css`: visual design, responsive layouts, animation, and print rules.
+- `script.js`: menu, filters, details, clipboard handling, and scroll reveals.
+- `assets/favicon.svg`: custom initials favicon.
+- `assets/student-api.yaml`: completed OpenAPI coursework specification.
+- `vercel.json`: static website settings and basic response headers.
+
+## Preview locally
+
+Open `index.html` directly in a browser. For a local server, run `python -m http.server 4173` from this folder, then open http://localhost:4173. Email copying needs HTTPS or localhost and falls back to displaying the email if clipboard access is unavailable.
+
+## Personalize before final submission
+
+The name, existing skills, email, and education were retained from the existing repository. Review all text for accuracy, especially newly written introductory text and learning interests.
+
+1. Add your professional profile photo. The current artwork is an initials placeholder, not a photograph. Save your photo as `assets/profile.jpg`. In `index.html`, replace the complete `div` with class `portrait-placeholder` with:
+
+   `<img class="profile-photo" src="assets/profile.jpg" alt="Wendyl Ziv S. Arellano" width="600" height="700">`
+
+2. Confirm education dates and expand MCPI to its full official name if desired.
+3. Add your city if you want it public. Panabo City currently identifies school locations, not a claimed home address.
+4. Add a real LinkedIn profile and any other social accounts you want public. These were omitted because no URLs were provided.
+5. Add verified awards, certifications, internships, and other projects if applicable. None were invented.
+6. Confirm the listed developing technical skills accurately represent your learning. The API project is documentation, not a working backend.
+7. After deployment, replace the live-link instruction in this README with your actual Vercel URL.
+
+## Deploy to Vercel
+
+1. Push the updated files to this repository's `main` branch, keeping the existing Git history.
+2. Open Vercel and select **Add New → Project**.
+3. Import `Boytooo/wendyl-personal-cv-2026`. Connect or authorize GitHub if asked.
+4. Select framework preset **Other**. Root directory is the repository root. Leave the build command empty and use `.` as the output directory if Vercel asks for one. No environment variables are needed.
+5. Deploy, then open the generated production URL.
+6. Test navigation, project filters, the API download, email links, and the layout on your phone and computer.
+7. Add the live URL to this README and commit the update.
+
+Submit both the live Vercel URL and GitHub repository URL in the LMS. A local preview is not a public deployment.
+
+## Development history and attribution
+
+The original repository history is preserved. The redesign adds separate commits for page layout/project content, interactions, and documentation/verification. AI assisted the redesign. Review the HTML structure, CSS breakpoints, and JavaScript event handlers so you can explain the work you submit. Make future commits for actual changes rather than creating empty commits just to increase the count.
