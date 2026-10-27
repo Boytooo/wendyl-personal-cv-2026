@@ -1,0 +1,62 @@
+openapi: 3.0.3
+info:
+  title: Student Information API
+  version: 1.0.0
+  description: API for managing student records
+paths:
+  /api/v1/students:
+    get:
+      summary: Retrieve all students
+      responses:
+        '200':
+          description: List of students retrieved successfully
+    post:
+      summary: Register a new student
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+                program:
+                  type: string
+                year:
+                  type: integer
+      responses:
+        '201':
+          description: Student registered successfully
+  /api/v1/students/{id}:
+    get:
+      summary: Retrieve a specific student by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Student retrieved successfully
+        '404':
+          description: Student with the specified ID was not found
+
+# Guide Questions and Answers
+# 1. What is the purpose of the paths section in an OpenAPI Specification?
+#    The paths section defines the API endpoints and the operations available
+#    at each endpoint, including HTTP methods, parameters, request bodies,
+#    and possible responses.
+#
+# 2. Why is the id parameter required when retrieving a specific student?
+#    The id identifies which student's record to retrieve. It is required
+#    because it is part of the URL path /api/v1/students/{id} and must be
+#    replaced with a specific student's ID.
+#
+# 3. What is the difference between the 200 and 404 response codes?
+#    200 OK means the request succeeded; for a student lookup, the student's
+#    record was found. 404 Not Found means no student with the specified ID
+#    was found.
