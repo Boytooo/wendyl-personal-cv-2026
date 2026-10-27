@@ -14,7 +14,7 @@ HTML5, CSS3, and vanilla JavaScript. No framework, package installation, build s
 ## Features
 
 - Profile, career objective, basic information, education, and skills.
-- Two project previews: this CV website and the Student Information API specification.
+- Three project previews: SmartAqua Pro (ongoing), this CV website, and the Student Information API specification. SmartAqua Pro uses a custom title cover, not a screenshot of its application.
 - Academic experience and learning milestones, without invented employment or certifications.
 - Working GitHub links, email links, email copying, and downloadable API specification.
 - Mobile navigation with Escape-to-close, project filters, and expandable API details.
@@ -27,6 +27,7 @@ HTML5, CSS3, and vanilla JavaScript. No framework, package installation, build s
 - `style.css`: visual design, responsive layouts, animation, and print rules.
 - `script.js`: menu, filters, details, clipboard handling, and scroll reveals.
 - `assets/favicon.svg`: custom initials favicon.
+- `assets/profile.png`: supplied personal profile photograph, used in the hero and CV preview.
 - `assets/student-api.yaml`: completed OpenAPI coursework specification.
 - `vercel.json`: static website settings and basic response headers.
 
@@ -38,16 +39,14 @@ Open `index.html` directly in a browser. For a local server, run `python -m http
 
 The name, existing skills, email, and education were retained from the existing repository. Review all text for accuracy, especially newly written introductory text and learning interests.
 
-1. Add your professional profile photo. The current artwork is an initials placeholder, not a photograph. Save your photo as `assets/profile.jpg`. In `index.html`, replace the complete `div` with class `portrait-placeholder` with:
-
-   `<img class="profile-photo" src="assets/profile.jpg" alt="Wendyl Ziv S. Arellano" width="600" height="700">`
-
+1. Your supplied profile photograph is included in `assets/profile.png`. Its framing is controlled by `.profile-photo` in `style.css`; the original image is preserved.
 2. Confirm education dates and expand MCPI to its full official name if desired.
 3. Add your city if you want it public. Panabo City currently identifies school locations, not a claimed home address.
 4. Add a real LinkedIn profile and any other social accounts you want public. These were omitted because no URLs were provided.
 5. Add verified awards, certifications, internships, and other projects if applicable. None were invented.
 6. Confirm the listed developing technical skills accurately represent your learning. The API project is documentation, not a working backend.
-7. After deployment, replace the live-link instruction in this README with your actual Vercel URL.
+7. SmartAqua Pro is an ongoing IoT-based aquarium monitoring and automation project. Its description and repository link were supplied by the student: https://github.com/gehleegian/smart-aqua-pro-v1. Specific hardware, languages, your individual role, application screenshots, and a live demo were not supplied and are not claimed.
+8. After deployment, replace the live-link instruction in this README with your actual Vercel URL.
 
 ## Deploy to Vercel
 
